@@ -9,12 +9,34 @@
 
 /* share tag styles */
 .navbar,
-.nav-container {
+.nav-container,
+.quick-features-section {
     display: flex;
+}
+
+
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.brand-button {
+    width: 180px;
+    height: 64px;
+    border-radius: 10px;
+    padding: 20px 25px;
+    background-color: #FF900E;
+    border: none;
+    font-size: 20px;
+    font-weight: 600px;
+    color: #FFFFFF;
+
 }
 
 /* Navbar section */
 header {
+
     background-color: rgba(255, 144, 14, 0.1);
 }
 
@@ -67,18 +89,7 @@ header {
     color: #727272;
 }
 
-.brand-container button {
-    width: 180px;
-    height: 64px;
-    border-radius: 10px;
-    padding: 20px 25px;
-    background-color: #FF900E;
-    border: none;
-    font-size: 20px;
-    font-weight: 600px;
-    color: #FFFFFF;
 
-}
 
 .brand-container img {
     width: 100%;
@@ -88,6 +99,44 @@ header {
 
 /* Navigation bar End */
 
+/* quick list Features starts s */
+
+.quick-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.quick-features-section {
+    align-items: center;
+    gap: 73px;
+    margin-top: 85px;
+}
+
+.quick-tittle {
+    font-size: 45px;
+    font-weight: 500px;
+    color: #727272;
+}
+
+.quick-tittle-black {
+    font-size: 45px;
+    font-weight: bold;
+    color: #131313;
+}
+
+.quick-tittle-orange {
+    font-size: 45px;
+    font-weight: bold;
+    color: #FF900E;
+}
+
+.quick-description {
+    font-size: 16px;
+    font-weight: 400px;
+    color: #727272;
+    line-height: 26px;
+}
 
 
 /* @media sereen  Queary Start */
@@ -96,7 +145,12 @@ header {
 @media screen and (max-width: 576px) {
 
     .navbar,
-    .nav-container {
+    .nav-container,
+    .quick-features-section {
         flex-direction: column;
+    }
+
+    .quick-img-container {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
