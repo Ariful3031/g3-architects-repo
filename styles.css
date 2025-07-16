@@ -111,6 +111,12 @@ header {
     align-items: center;
     gap: 73px;
     margin-top: 85px;
+    margin-bottom: 130px;
+}
+
+.quick-text-container {
+    max-width: 540px;
+    height: 305px;
 }
 
 .quick-tittle {
@@ -136,7 +142,75 @@ header {
     font-weight: 400px;
     color: #727272;
     line-height: 26px;
+    margin-top: 24px;
+    margin-bottom: 32px;
 }
+
+/* <!-- Enjoy features section starts --> */
+
+
+
+
+
+/* <!-- Some facts Section Start --> */
+
+.some-fact-main-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+}
+
+.fact-tittle {
+    font-size: 45px;
+    font-weight: bold;
+    color: #131313;
+    margin-top: 130px;
+    margin-bottom: 24px;
+}
+
+.fact-description {
+    font-size: 16px;
+    font-weight: 400px;
+    color: #727272;
+    line-height: 26px;
+    margin-bottom: 100px;
+}
+
+.number-tittle {
+    font-size: 45px;
+    font-weight: 600px;
+    color: #424242;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.icon-name {
+    margin-top: px;
+    margin-bottom: 5px;
+}
+
+.fact-container-description {
+    font-size: 16px;
+    font-weight: 400px;
+    color: #727272;
+    margin-top: 30px;
+}
+
+.some-fact-container {
+    width: 242px;
+    height: 242px;
+    border: 2px solid #FF900E;
+    border-radius: 10px;
+    text-align: center;
+    padding-top: 46px;
+    padding-right: 37px;
+    padding-left: 36px;
+    padding-bottom: 50px;
+
+}
+
+
+
 
 
 /* @media sereen  Queary Start */
@@ -150,7 +224,23 @@ header {
         flex-direction: column;
     }
 
-    .quick-img-container {
+    .quick-img-container,
+    .some-fact-main-container {
         grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .quick-features-section {
+        flex-direction: column;
+    }
+
+    .some-fact-main-container {
+        max-width: 100%;
+    }
+
+    .some-fact-main-container {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
